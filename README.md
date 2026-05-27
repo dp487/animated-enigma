@@ -74,3 +74,5 @@ Then scan the QR code with **Expo Go** or run on a simulator.
 ## 📄 License
 
 MIT
+
+<!-- Documentation pass completed 2026-05-27 -->
