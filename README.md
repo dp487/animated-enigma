@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+# SimpleMeditation
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern **React Native meditation app** built with Expo. This app helps users practice mindfulness through guided meditation sessions with a clean, calming interface.
 
-## Get started
+## ✨ Features
 
-1. Install dependencies
+- File-based navigation using Expo Router
+- Tab-based interface for easy navigation
+- Meditation section with guided sessions
+- Clean, minimalist design focused on user experience
+- Built with TypeScript for type safety
+- Styled using Tailwind CSS
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tech Stack
 
-2. Start the app
+- **Framework**: React Native + Expo
+- **Navigation**: Expo Router (file-based routing)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (via NativeWind or similar setup)
+- **Platform**: iOS, Android, and Web
 
-   ```bash
-    npx expo start
-   ```
+## 📁 Project Structure
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+animated-enigma/
+├── app/                    # Expo Router screens
+│   ├── (tabs)/
+│   ├── (modal)/
+│   ├── meditate/
+│   ├── _layout.tsx
+│   └── index.tsx
+├── components/             # Reusable UI components
+├── constants/              # App constants and theme
+├── context/                # React Context providers
+├── assets/                 # Images, fonts, icons
+├── App.js                  # Entry point
+├── app.json                # Expo configuration
+├── tailwind.config.js      # Tailwind configuration
+└── package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Getting Started
 
-## Learn more
+### Prerequisites
 
-To learn more about developing your project with Expo, look at the following resources:
+- Node.js 18+
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator / Android Emulator (or Expo Go app)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Installation
 
-## Join the community
+```bash
+# Clone the repository
+git clone https://github.com/dp487/animated-enigma.git
+cd animated-enigma
 
-Join our community of developers creating universal apps.
+# Install dependencies
+npm install
+# or
+yarn install
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Start the development server
+npx expo start
+```
+
+Then scan the QR code with **Expo Go** or run on a simulator.
+
+## 📱 Running on Devices
+
+- **iOS**: `npx expo run:ios`
+- **Android**: `npx expo run:android`
+- **Web**: `npx expo start --web`
+
+## 📄 License
+
+MIT
